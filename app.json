@@ -1,0 +1,26 @@
+{
+  "name": "Ask Stack",
+  "description": "A Slack bot that searches Stack Overflow for you. Based on Howdy's Botkit.",
+  "repository": "https://github.com/ambethoney/AskStack.git",
+  "keywords": ["node", "bots", "slack","botkit", "stack overflow"],
+  "website": "askstack.tech",
+  "success_url":"/",
+  "addons":[
+    {
+      "plan": "mongolab",
+      "as": "MONGO"
+    }
+  ],
+  "env": {
+      "clientId": {
+          "description": "Client ID provided by Slack"
+      },
+      "clientSecret": {
+          "description": "Client Secret provided by Slack"
+      },
+      "studio_token": {
+          "description": "Token associated with your bot in Botkit Studio",
+          "required":false
+      }
+  }
+}
