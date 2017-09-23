@@ -22,6 +22,7 @@ module.exports = function(controller) {
                     url: payload.identity.url,
                     name: payload.identity.team,
                 };
+                console.log(team)
                 var new_team= true;
             }
 
